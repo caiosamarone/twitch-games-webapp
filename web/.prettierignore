@@ -1,0 +1,7 @@
+dist
+src/assets/*
+yarn.lock
+.gitignore
+.eslintignore
+tsconfig.json
+vite.config.ts
