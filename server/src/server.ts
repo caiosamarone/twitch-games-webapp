@@ -73,7 +73,7 @@ app.get("/ads/:id/discord", async (request, response) => {
 });
 
 app.get("/games/:id/ads", async (request, response) => {
-  const gameId = request.params.id;
+  const gameId = request.params.id as string;
 
   const ads = await prisma.ad.findMany({
     select: {
