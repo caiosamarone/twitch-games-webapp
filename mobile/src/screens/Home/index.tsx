@@ -16,9 +16,9 @@ const Home = () => {
   const handleOpenGame = ({ id, bannerUrl, title }: GameCardProps) => {
     navigation.navigate('game', { id, bannerUrl, title });
   };
-
+  console.log(games);
   useEffect(() => {
-    fetch('http://192.168.0.21:3333/games')
+    fetch('http://192.168.0.10:3333/games')
       .then(response => response.json())
       .then(data => setGames(data));
   }, []);
